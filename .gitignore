@@ -1,0 +1,13 @@
+# project meta
+.vscode
+
+# objects and binaries
+*.o
+*.exe
+
+# tmp files
+console.txt
+result.txt
+
+# git repo of problem description 
+Project-2018
