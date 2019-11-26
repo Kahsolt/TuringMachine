@@ -18,7 +18,7 @@
 ; (naming rule: symbols are single literal chars, states are literal strings)
 ;
 
-#S = { 0, 1 }
+#S = { 0, 1 }   ; enable input validation
 
 ; transition functions rules are vital, each of them is defined as a five-tuple:
 ;   <cur_state> <cur_symbol> <new_symbol> <move_direction> <new_state>

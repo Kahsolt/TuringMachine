@@ -6,6 +6,7 @@
 ----
 
 The problem description is here: [TM-Problem.pdf](/TM-Problem.pdf)
+Detailed solution report is here: [TM.md](/TM.md)
 
 ## Quickstart
 
@@ -30,6 +31,8 @@ The problem description is here: [TM-Problem.pdf](/TM-Problem.pdf)
   - [mult](/programs/mult/test.tm): decide a unary multiply equation string
   - [fib_4](/programs/fib_4/test.tm): decide a unary string in fibonacci number length, on 4-tape TM
   - [ww](/programs/ww/test.tm): decide a binary string in form of 'ww'
+
+
 
 ----
 
