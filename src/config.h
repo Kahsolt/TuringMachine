@@ -1,16 +1,22 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-/* user settings */
+/* User Settings */
 
 // parser
 #define LINE_BUFFER_SIZE  10240
 
-// definition
+// definition item defaults
+#define TM_DEFAULT_B      '_'
+#define TM_DEFAULT_q      "init"
+#define TM_DEFAULT_F      "halt"
+
+// definition syntax
+#define COMMENT_MARK      ';'
 #define WILDCARD_MARK     '*'
 #define ITEM_SEPERATOR    ','
 
-// TM hardware
+// TM hardware limits
 #define LIMIT_ENABLE      true
 #define LIMIT_TIME        3000
 #define LIMIT_SPACE       100
@@ -21,21 +27,25 @@
 #define OUTPUT_FILENAME     "result.txt"
 #define DEBUG_FILENAME      "console.txt"
 
-// console printings
-#define BANNER_WIDTH      78
-#define BANNER_SECTION    '='
-#define BANNER_SEPERATOR  '-'
-#define COMMENT_MARK      ';'
+// runtime cmdopts defaults
+#define OPT_DEFAULT_LOGLEVEL SIMPLE
+#define OPT_DEFAULT_SAVE     true
 
-/* os specifics */
+// console print typesettings
+#define BANNER_WIDTH      78
+#define BANNER_SECTOR     '='
+#define BANNER_SEPERATOR  '-'
+
+/* OS Specifics */
 #ifdef _WIN32
   #define PATH_SEPERATOR '\\'
-#elif __linux__ || __unix__
+  #define NULL_DEVICE "NUL"
+#elif defined(__linux__) || defined(__unix__)
   #define PATH_SEPERATOR '/'
+  #define NULL_DEVICE "/dev/null"
 #endif
 
-/* internal debug */
+/* Internal Debug */
 // #define DEBUG_PARSER
-#define DEBUG_TM
 
 #endif  // CONFIG_H

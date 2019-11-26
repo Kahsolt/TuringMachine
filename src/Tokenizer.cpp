@@ -1,7 +1,7 @@
 #include <iostream>
 #include "utils.h"
-#include "Tokenizer.h"
 #include "Exception.h"
+#include "Tokenizer.h"
 
 Token Token::EMPTY_TOKEN = Token();
 

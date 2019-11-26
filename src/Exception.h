@@ -13,8 +13,15 @@ public:
   virtual string what();
 };
 
-class SyntaxError: public TMException {
+class DefinitionError: public TMException {
+protected:
   string location;  // "lineno:pos"
+public:
+  DefinitionError(string msg, string location);
+  virtual string what();
+};
+
+class SyntaxError: public DefinitionError {
 public:
   SyntaxError(string msg, string location);
   virtual string what();

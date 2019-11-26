@@ -9,5 +9,6 @@
 console.txt
 result.txt
 
-# git repo of problem description 
-Project-2018
+# distro tarball
+tar.py
+*.zip

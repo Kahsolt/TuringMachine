@@ -24,6 +24,7 @@ inline string to_string(TokenType type) {
     default: return "_BAD_";
   }
 }
+
 struct Token {
   static Token EMPTY_TOKEN;
   TokenType type;
