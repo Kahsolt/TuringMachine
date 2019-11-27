@@ -4,6 +4,7 @@
 # objects and binaries
 *.o
 *.exe
+turing
 
 # tmp files
 console.txt
