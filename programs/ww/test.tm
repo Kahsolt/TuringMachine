@@ -105,13 +105,13 @@ elim_b * _ l l_clr_rej
 r_clr_acc _ * * accept  ; ACCEPT
 r_clr_acc * _ r r_clr_acc
 
-; write True then hallt
+; write True then halt
 accept  * T r accept2
 accept2 * r r accept3
 accept3 * u r accept4
 accept4 * e * halt
 
-; write False then hallt
+; write False then halt
 reject  * F r reject2
 reject2 * a r reject3
 reject3 * l r reject4

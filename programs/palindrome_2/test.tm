@@ -33,7 +33,6 @@ cp 0_ 00 rr cp
 cp 1_ 11 rr cp
 cp __ __ ll mh
 
-
 ; State mh: move 1st head to the left
 mh _* _* r* cmp
 mh ** ** l* mh 
